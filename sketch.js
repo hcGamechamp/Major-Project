@@ -25,10 +25,16 @@ function setup() {
 
 function draw() {
   if (state === "start") {
-    image(startScreen, windowWidth, windowHeight);
+    image(startScreen, 0, 0, windowWidth, windowHeight);
+    fill("black");
+    rect(475, 450, 500, 250); // fix this to fit the un ocupide area
   }
 }
 
-function systemCall() {
-  
+// function Button() { ////fill this in after the above
+//   if (mouseInsideRect())
+// }
+
+function mouseInsideRect(left, right, top, bottom) { // inside the button sensor
+  return mouseX >= left && mouseX <= right && mouseY >= top && mouseY <= bottom;
 }
