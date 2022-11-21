@@ -27,7 +27,7 @@ function draw() {
   if (state === "start") {
     image(startScreen, 0, 0, windowWidth, windowHeight);
     fill("black");
-    rect(width/2.5, width/2.5, 250, 100 ); // fix this to fit the un ocupide area
+    rect(width/2.5, width/2.5, 250, 100); // fix this to fit the un ocupide area
   }
 }
 
