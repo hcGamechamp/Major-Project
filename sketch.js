@@ -27,13 +27,18 @@ function draw() {
   if (state === "start") {
     image(startScreen, 0, 0, windowWidth, windowHeight);
     fill("black");
-    rect(width/2.5, width/2.5, 250, 100); // fix this to fit the un ocupide area
+    rect(width/2.5, width/2.5, 250, 100); 
+  }
+  else if (state === "selection") {
+    background("black");
   }
 }
 
-// function Button() { ////fill this in after the above
-//   if (mouseInsideRect())
-// }
+function Button() { //fill this in after the above
+  if (mouseInsideRect(width/2.5, width/2.5, 250, 100)) {
+    state = "selection";
+  }
+}
 
 function mouseInsideRect(left, right, top, bottom) { // inside the button sensor
   return mouseX >= left && mouseX <= right && mouseY >= top && mouseY <= bottom;
