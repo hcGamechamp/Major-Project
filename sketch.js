@@ -32,14 +32,19 @@ function draw() {
   else if (state === "selection") {
     background("black");
   }
+  Button();
 }
 
 function Button() { //fill this in after the above
-  if (mouseInsideRect(width/2.5, width/2.5, 250, 100)) {
+  if (mouseInsideRect(width/2.5, width/2.5, 250, 100) && mousePressed()) {
     state = "selection";
   }
 }
 
 function mouseInsideRect(left, right, top, bottom) { // inside the button sensor
   return mouseX >= left && mouseX <= right && mouseY >= top && mouseY <= bottom;
+}
+
+function mousePressed() {
+  
 }
