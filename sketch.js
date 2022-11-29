@@ -27,24 +27,46 @@ function draw() {
   if (state === "start") {
     image(startScreen, 0, 0, windowWidth, windowHeight);
     fill("black");
-    rect(width/2.5, width/2.5, 250, 100); 
+    rect(width/2.4, width/2.5, 250, 100); 
+    Button();
   }
   else if (state === "selection") {
     background("black");
   }
-  Button();
 }
 
 function Button() { //fill this in after the above
-  if (mouseInsideRect(width/2.5, width/2.5, 250, 100) && mousePressed()) {
+  if (state === "start" && mouseInsideRect(width/2.4, width/2.5, 250, 100) && mouseIsPressed) {
     state = "selection";
   }
-}
 
+}
 function mouseInsideRect(left, right, top, bottom) { // inside the button sensor
   return mouseX >= left && mouseX <= right && mouseY >= top && mouseY <= bottom;
 }
 
-function mousePressed() {
-  
-}
+// function levelselect() {
+//   if (state = "selection" && mouseInsideRect(// size of button) && mouseIsPressed) {
+//     state = "levelOne";
+//   }
+//   if (state = "selection" && mouseInsideRect(// size of button) && mouseIsPressed) {
+//     state = "levelTwo";
+//   }
+//   if (state = "selection" && mouseInsideRect(// size of button) && mouseIsPressed) {
+//     state = "levelThree";
+//   }
+// }
+
+// function selectionDisplay() {
+//   rect();  // level 1
+//   textSize(50);
+//   text(); // 1
+
+//   rect();  // level 2
+//   textSize(50);
+//   text(); // 2
+
+//   rect();  // level 3
+//   textSize(50);
+//   text(); // 3
+// }

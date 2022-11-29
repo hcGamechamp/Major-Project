@@ -14,7 +14,8 @@ Making the angry birds game (or slingshot game) with mutpile levels and possibly
 - gravity
 - material type
 - structures (buildings)
-
+- sounds effects
+ 
 ## Nice To Have List
 
 - variety of birds
