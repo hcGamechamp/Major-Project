@@ -39,8 +39,8 @@ function Button() { //fill this in after the above
   if (state === "start" && mouseInsideRect(width/2.4, width/2.5, 250, 100) && mouseIsPressed) {
     state = "selection";
   }
-
 }
+
 function mouseInsideRect(left, right, top, bottom) { // inside the button sensor
   return mouseX >= left && mouseX <= right && mouseY >= top && mouseY <= bottom;
 }

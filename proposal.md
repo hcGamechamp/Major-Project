@@ -22,3 +22,4 @@ Making the angry birds game (or slingshot game) with mutpile levels and possibly
 - special abilities (tnt)
 - bird abilities
 - market place for custom birds (shop)
+- Bird Trail
