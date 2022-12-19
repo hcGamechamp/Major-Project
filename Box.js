@@ -3,7 +3,7 @@
 class Box {
   constructor(x,y,w,h) {
 
-    var options = {
+    let options = {
         restitution:1
     }
 
