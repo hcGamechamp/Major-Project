@@ -2,24 +2,25 @@
 
 Making the angry birds game (or slingshot game) with mutpile levels and possibly make the full version of the actual game, with some extra features from the creators
 
+
 ## Needs To Have List
 
-- startscreen
-- level selection screen
-- birds
-- pigs
-- colison detetcion
-- object orientaion
-- slingshot 
-- gravity
-- material type
-- structures (buildings)
-- sounds effects
+- startscreen (Almost Done)
+- level selection screen (Almost Done)
+- birds (Almost Done)
+- pigs (Almost Done)
+- colison detetcion (Complete) 
+- object orientaion (Complete)
+- slingshot (Complete)
+- gravity (Complete)
+- material type (Not Attempted)
+- structures (buildings) (Complete)
+- sounds effects (Almost Done)
  
 ## Nice To Have List
 
-- variety of birds
-- special abilities (tnt)
-- bird abilities
-- custom birds
-- Bird Trail
+- variety of birds (Incomplete)
+- special abilities (tnt) (Not Attempted)
+- bird abilities (Not Attempted)
+- custom birds (Not Attempted)
+- Bird Trail (Complete)
