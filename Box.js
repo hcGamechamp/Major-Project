@@ -1,18 +1,10 @@
-/* eslint-disable */
-
-class Box {
-  constructor(x,y,w,h) {
-
-    let options = {
-        restitution:1
-    }
-
-
-    this.body = Bodies.rectangle(x, y, w, h, options);
+class Box extends BaseClass {  // creates the y and x corodiantes for the picture
+  constructor(x, y, width, height){
+    super(x,y,width,height);
+    this.image = loadImage("sprites/wood1.png");
   }
-  display() {
-    rectMode(CENTER);
-    //fill()
-    rect(this.body.position.x, this.body.position.y, this.width, this.height);
-  }
-}
+
+};
+
+
+// all the physics for the sprite and collison are in the base class

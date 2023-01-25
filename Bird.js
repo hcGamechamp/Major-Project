@@ -1,38 +1,25 @@
-let sprite;
+class Bird extends BaseClass {
+  constructor(x,y){
+    super(x,y,50,50);
+    this.image = loadImage("sprites/bird.png");
+    this.smokeImage = loadImage("sprites/smoke.png");
+    this.trajectory =[];
+  }
 
-function setup() {
-  new canvas(242, 100);
+  display() {
+    //this.body.position.x = mouseX;
+    //this.body.position.y = mouseY;
 
-  sprite = new sprite();
-  sprite.diameter = 50;
+    super.display();
+    // allows gravity and the bird to travle at high speeds
+    if(this.body.velocity.x > 10 && this.body.position.x > 200){
+      let position = [this.body.position.x, this.body.position.y];
+      this.trajectory.push(position);
+    }
+   
+    // makes the tracer for the slingshot/bird
+    for(let i=0; i<this.trajectory.length; i++){
+      image(this.smokeImage, this.trajectory[i][0], this.trajectory[i][1]);
+    }
+  }
 }
-
-// class bird {
-//   constructor(x, y, radius) {
-//     this.x = x;
-//     this.y = y;
-//     this.radius = radius;
-
-//   }
-
-//   move() {
-//     this.x += this.dx;
-//     this.y += this.dy;
-//     // gravity // if x > (sling shot x number)
-//     //world.gravity.y = 10;
-//   }
-
-//   display() {
-//     circle(this.x, this.y, this.radius*2);
-//   }
-
-//   objectCollision() {
-    
-//   }
-
-
-//   mapCollision() {
-//     // if y <= (windowheight) bird stops falling and can roll based on the momentem that it had
-//     // if x <= (windowwidth) stops the bird from traveling outside the map when hiting the wall
-//   }
-// }
